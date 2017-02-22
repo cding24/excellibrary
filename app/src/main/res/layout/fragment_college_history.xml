@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:paddingTop="5dp"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/enroll_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/enroll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/title_left_bg"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:text="录取数据"
+                android:textColor="@color/title_bg"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/enroll_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_below="@id/enroll_title"
+                android:background="#bfbfbf" />
+
+            <cn.linghu.excelpanel.ExcelPanel
+                android:id="@+id/enroll_excel"
+                android:layout_width="match_parent"
+                android:layout_height="351dp"
+                android:layout_below="@id/enroll_divider"
+                android:background="#ffffff"
+                app:left_cell_width="@dimen/excel_row_title_width"
+                app:normal_cell_width="@dimen/excel_cell_width"
+                app:top_cell_height="@dimen/excel_cell_height" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/submit_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/submit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/title_left_bg"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:text="投档数据"
+                android:textColor="@color/title_bg"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/submit_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_below="@id/submit_title"
+                android:background="#bfbfbf" />
+
+            <cn.linghu.excelpanel.ExcelPanel
+                android:id="@+id/submit_excel"
+                android:layout_width="match_parent"
+                android:layout_height="351dp"
+                android:layout_below="@id/submit_divider"
+                android:background="#ffffff"
+                app:left_cell_width="@dimen/excel_row_title_width"
+                app:normal_cell_width="@dimen/excel_cell_width"
+                app:top_cell_height="@dimen/excel_cell_height" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/major_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/major_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/title_left_bg"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:text="专业数据"
+                android:textColor="@color/title_bg"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/major_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_below="@id/major_title"
+                android:background="#bfbfbf" />
+
+            <cn.linghu.excelpanel.ExcelPanel
+                android:id="@+id/major_excel"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_below="@id/major_divider"
+                app:left_cell_width="@dimen/excel_row_title_width"
+                app:normal_cell_width="@dimen/excel_cell_width"
+                app:top_cell_height="@dimen/excel_cell_height" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

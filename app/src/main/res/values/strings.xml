@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExcelApp</string>
+
+    <string name="college_history_excel_enroll_title">数据</string>
+    <string name="college_history_excel_submit_title">数据</string>
+    <string name="college_history_excel_major_title">专业名</string>
+</resources>

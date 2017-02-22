@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExcelPanel</string>
+    <string name="loading_txt">正在加载...</string>
+
+</resources>
